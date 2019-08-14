@@ -4,7 +4,7 @@ Notes on SAP HANA. Short and to the point!
 
 **Table of contents**
 
-- (Changing Existing Tables)[#changing-existing-tables]
+- [Changing Existing Tables](#changing-existing-tables)
 
 # Changing existing tables
 
