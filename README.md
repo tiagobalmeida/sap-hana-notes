@@ -1,11 +1,22 @@
 # sap-hana-notes
 
-Notes on SAP HANA. Short and to the point!
+Notes on SAP HANA. Short and to the point unlike SAP documents!
 
 **Table of contents**
 
+- [Inserting data into tables](#inserting-data-into-tables)
 - [Changing Existing Tables](#changing-existing-tables)
 - [Sample Procedures](#sample-procedures)
+
+# Inserting data into tables
+
+## Insert data that exists in another table (subquery)
+
+```
+INSERT INTO CUSTOM_TABLE ("COL1", "COL2")
+SELECT OTHER_TABLE_COL1, OTHER_TABLE_COL2
+FROM OTHER_TABLE;
+```
 
 # Changing existing tables
 
