@@ -7,6 +7,7 @@ Notes on SAP HANA. Short and to the point unlike SAP documents!
 - [Inserting data into tables](#inserting-data-into-tables)
 - [Changing Existing Tables](#changing-existing-tables)
 - [Sample Procedures](#sample-procedures)
+- [System Details](#system-details)
 
 # Inserting data into tables
 
@@ -46,4 +47,12 @@ BEGIN
    
    DELETE FROM "TABLE" WHERE "COLUMN" < ADD_DAYS(CURRENT_TIMESTAMP, 1);
 END
+```
+
+# System Details
+
+## Grab the current SAP HANA Version 
+
+```
+SELECT * FROM SYS.M_DATABASE;
 ```
