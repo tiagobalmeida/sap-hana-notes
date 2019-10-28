@@ -8,6 +8,7 @@ Notes on SAP HANA. Short and to the point unlike SAP documents!
 - [Changing Existing Tables](#changing-existing-tables)
 - [Sample Procedures](#sample-procedures)
 - [System Details](#system-details)
+- [Triggers](#triggers)
 
 # Inserting data into tables
 
@@ -56,3 +57,12 @@ END
 ```
 SELECT * FROM SYS.M_DATABASE;
 ```
+
+# Triggers
+
+## Do triggers run synchronously or assynchronously
+
+Triggers run Synchronously. If you have a trigger that runs on INSERT then the INSERT statement will take longer because it is running the triggers as well.
+
+
+
